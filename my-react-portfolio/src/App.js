@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header'
 import Home from './components/Home'
@@ -9,15 +9,19 @@ import { Button } from 'antd';
 
 
 function App() {
+  const [selectedComponent, setSelectedComponent] = useState('Home') // sets the default component
   return (
     <div className="App">
      <h1>MY REACT PORTFOLIO</h1> 
      <Button type="primary">View my work</Button>
-     <Header />
-     <Home />
-     <About />
-     <Projects />
-     <Contact />
+     <Header setSelectedComponent={setSelectedComponent}/>
+     <main>
+      {selectedComponent === 'Home' && <Home />}
+      {selectedComponent === 'About' && <About />}
+      {selectedComponent === 'Projects' && <Projects />}
+      {selectedComponent === 'Contact' && <Contact />}
+      
+     </main>
     </div>
   );
 }
