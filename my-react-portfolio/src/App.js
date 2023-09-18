@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
      <h1>MY REACT PORTFOLIO</h1> 
-     <Button type="primary">View my work</Button>
+     
      <Header setSelectedComponent={setSelectedComponent}/>
      <main>
       {selectedComponent === 'Home' && <Home />}
