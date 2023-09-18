@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function Header () {
+function Header ({setSelectedComponent}) {
     return (
         <div>
         <h1>My Navbar</h1>
