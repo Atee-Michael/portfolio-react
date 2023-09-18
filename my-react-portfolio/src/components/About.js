@@ -1,1 +1,20 @@
 // Displays information about me, my background and skills
+
+import React from "react";
+
+function About() {
+    return (
+
+        <h1>About me</h1>
+
+    )
+
+
+}
+
+
+
+
+
+
+export default About;
