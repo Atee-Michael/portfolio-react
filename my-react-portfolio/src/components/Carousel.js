@@ -17,7 +17,7 @@ function ControlledCarousel() {
       <Carousel.Item>
       <img
           className="d-block mx-auto w-70"
-          src="/img/developerImage.jpg"
+          src="/img/developerImage.png"
           alt="Developer Slide"
         />
         <Carousel.Caption >
@@ -30,7 +30,7 @@ function ControlledCarousel() {
       <Carousel.Item>
       <img
           className="d-block mx-auto w-70"
-          src="/img/builderImage.jpg"
+          src="/img/builderImage.png"
           alt="Builder Slide"
         />
         <Carousel.Caption>
@@ -43,7 +43,7 @@ function ControlledCarousel() {
       <Carousel.Item>
       <img
           className="d-block mx-auto w-70"
-          src="/img/consultantImage.jpg"
+          src="/img/consultantImage.png"
           alt="Consultant Slide"
         />
         <Carousel.Caption>
