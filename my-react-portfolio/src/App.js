@@ -11,9 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [selectedComponent, setSelectedComponent] = useState('Home') // sets the default component
   return (
-    <div className="App">
-     <h1>MY REACT PORTFOLIO</h1> 
-     
+    <div className="App">  
      <Header setSelectedComponent={setSelectedComponent}/>
      <main>
       {selectedComponent === 'Home' && <Home />}
