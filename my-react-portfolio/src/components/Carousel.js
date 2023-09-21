@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 
 
+
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -15,11 +16,11 @@ function ControlledCarousel() {
     <Carousel activeIndex={index} onSelect={handleSelect} interval={5000}>
       <Carousel.Item>
       <img
-          className="d-block w-100"
-          src="../img/webdesign.jpg"
+          className="d-block mx-auto w-70"
+          src="/img/developerImage.jpg"
           alt="Developer Slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption >
           <h3>I'm a Developer</h3>
           <p>Frontend Write-up</p>
           <Button variant="primary">More About Me</Button>{' '}
@@ -28,8 +29,8 @@ function ControlledCarousel() {
       </Carousel.Item>
       <Carousel.Item>
       <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Builder"
+          className="d-block mx-auto w-70"
+          src="/img/builderImage.jpg"
           alt="Builder Slide"
         />
         <Carousel.Caption>
@@ -41,8 +42,8 @@ function ControlledCarousel() {
       </Carousel.Item>
       <Carousel.Item>
       <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Consultant"
+          className="d-block mx-auto w-70"
+          src="/img/consultantImage.jpg"
           alt="Consultant Slide"
         />
         <Carousel.Caption>
